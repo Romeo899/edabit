@@ -35,7 +35,7 @@ rl.question("Paste the problem title: ", (title) => {
     }
 
     const filename = slugify(title) + ".js";
-    const folder = slugify(difficulty); // use slugified folder name
+    const folder = slugify(difficulty);
     const filePath = path.join(folder, filename);
 
     if (!fs.existsSync(folder)) {
@@ -61,24 +61,24 @@ Date: ${new Date().toISOString().split("T")[0]}
 
     fs.writeFileSync(filePath, content, "utf8");
     console.log(`✅ Created: ${filePath}`);
+
+    // LOGGING
+    const logFilePath = path.join("log.json");
+    let logs = [];
+
+    if (fs.existsSync(logFilePath)) {
+      logs = JSON.parse(fs.readFileSync(logFilePath, "utf8"));
+    }
+
+    logs.push({
+      title,
+      filename,
+      difficulty,
+      fullPath: filePath,
+      createdAt: new Date().toISOString(),
+    });
+
+    fs.writeFileSync(logFilePath, JSON.stringify(logs, null, 2));
     rl.close();
   });
 });
-
-const logFilePath = path.join("log.json");
-let logs = [];
-
-if (fs.existsSync(logFilePath)) {
-  logs = JSON.parse(fs.readFileSync(logFilePath, "utf8"));
-}
-
-logs.push({
-  title,
-  filename,
-  difficulty,
-  fullPath: filePath,
-  createdAt: new Date().toISOString()
-});
-
-fs.writeFileSync(logFilePath, JSON.stringify(logs, null, 2));
-
