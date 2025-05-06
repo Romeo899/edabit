@@ -26,5 +26,12 @@
     "difficulty": "very easy",
     "fullPath": "very_easy\\using_ternary_operators.js",
     "createdAt": "2025-05-06T21:02:40.493Z"
+  },
+  {
+    "title": "Arrow Functions",
+    "filename": "arrow_functions.js",
+    "difficulty": "very easy",
+    "fullPath": "very_easy\\arrow_functions.js",
+    "createdAt": "2025-05-06T21:04:11.634Z"
   }
 ]
