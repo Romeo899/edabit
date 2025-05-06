@@ -12,5 +12,12 @@
     "difficulty": "very easy",
     "fullPath": "very_easy\\movie_theatre_admittance.js",
     "createdAt": "2025-05-06T18:57:30.679Z"
+  },
+  {
+    "title": "Minimal IV: if-else if-else Inferno",
+    "filename": "minimal_iv_if_else_if_else_inferno.js",
+    "difficulty": "very easy",
+    "fullPath": "very_easy\\minimal_iv_if_else_if_else_inferno.js",
+    "createdAt": "2025-05-06T19:02:07.516Z"
   }
 ]
