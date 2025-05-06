@@ -64,21 +64,3 @@ Date: ${new Date().toISOString().split("T")[0]}
     rl.close();
   });
 });
-
-const logFilePath = path.join("log.json");
-let logs = [];
-
-if (fs.existsSync(logFilePath)) {
-  logs = JSON.parse(fs.readFileSync(logFilePath, "utf8"));
-}
-
-logs.push({
-  title,
-  filename,
-  difficulty,
-  fullPath: filePath,
-  createdAt: new Date().toISOString()
-});
-
-fs.writeFileSync(logFilePath, JSON.stringify(logs, null, 2));
-
