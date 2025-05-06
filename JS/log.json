@@ -40,5 +40,12 @@
     "difficulty": "very easy",
     "fullPath": "very_easy\\buggy_code.js",
     "createdAt": "2025-05-06T21:10:52.994Z"
+  },
+  {
+    "title": "Return a String as an Integer",
+    "filename": "return_a_string_as_an_integer.js",
+    "difficulty": "very easy",
+    "fullPath": "very_easy\\return_a_string_as_an_integer.js",
+    "createdAt": "2025-05-06T21:15:09.492Z"
   }
 ]
