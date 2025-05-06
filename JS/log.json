@@ -19,5 +19,12 @@
     "difficulty": "very easy",
     "fullPath": "very_easy\\minimal_iv_if_else_if_else_inferno.js",
     "createdAt": "2025-05-06T19:02:07.516Z"
+  },
+  {
+    "title": "Using Ternary Operators",
+    "filename": "using_ternary_operators.js",
+    "difficulty": "very easy",
+    "fullPath": "very_easy\\using_ternary_operators.js",
+    "createdAt": "2025-05-06T21:02:40.493Z"
   }
 ]
